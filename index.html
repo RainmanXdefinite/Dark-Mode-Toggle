@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Dark Mode Theme Toggle</title>
+</head>
+<body>
+    <button onclick="toggleDarkMode()">Toggle dark mode & light mode</button>
+    <div id="switchable-modes">
+        <h1>Testing dark mode - Theoretical implementation</h1>
+        <p>paragraph</p>
+        <h1>How does it work?</h1>
+        This works by making a div with the id 'switchable-modes'. Then making the button to switch it and
+        giving the button an onclick of toggleDarkMode(). Then coding the function like this:
+        <br>
+        first, we define in the script the variable to hold the current mode. I called it 'mode'. By default it's
+        set to light.
+        Then, we define the toggleDarkMode() function. We code it like this:<br>
+        If the mode is already dark, then we know the user wants to switch to light mode, so we set the mode to 
+        light and update all elements in the switchable-modes div to be the correct color. Else, if it's light,
+        switch it to dark mode and update all elements in the switchable-modes div to be the correct color.
+    </div>
+    This text will not update, since it is not in the switchable-modes div.
+</body>
+</html>
